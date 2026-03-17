@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\C#\SalesManagementSystem\SalesMS.WinForms\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="AdminSaveProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BestSellingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomerOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DepositeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OutOfStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SaveCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ValuedCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

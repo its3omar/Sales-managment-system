@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C#\\SalesManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\savecustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\savecustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\savecustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\savecustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\shopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\shopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\shopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\shopform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\smainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\smainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|e:\\c#\\salesmanagementsystem\\salesms.winforms\\smainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6BB8CE6-B623-4B03-9509-D64542F38307}|SalesMS.WinForms\\SalesMS.WinForms.csproj|solutionrelative:salesms.winforms\\smainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\LoginForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\LoginForm.cs",
+              "RelativeToolTip": "SalesMS.WinForms\\LoginForm.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T00:27:15.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\LoginForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "SalesMS.WinForms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T00:27:13.231Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaveCustomerForm.cs",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SaveCustomerForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\SaveCustomerForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SaveCustomerForm.cs",
+              "RelativeToolTip": "SalesMS.WinForms\\SaveCustomerForm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T00:26:56.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaveCustomerForm.cs [Design]",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SaveCustomerForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\SaveCustomerForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SaveCustomerForm.cs [Design]",
+              "RelativeToolTip": "SalesMS.WinForms\\SaveCustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T00:26:54.37Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShopForm.cs",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\ShopForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\ShopForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\ShopForm.cs",
+              "RelativeToolTip": "SalesMS.WinForms\\ShopForm.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwCwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T23:45:25.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopForm.cs [Design]",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\ShopForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\ShopForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\ShopForm.cs [Design]",
+              "RelativeToolTip": "SalesMS.WinForms\\ShopForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T23:45:22.2Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SMainForm.cs",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SMainForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\SMainForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SMainForm.cs",
+              "RelativeToolTip": "SalesMS.WinForms\\SMainForm.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAD4v3EAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T23:40:01.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SMainForm.cs [Design]",
+              "DocumentMoniker": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SMainForm.cs",
+              "RelativeDocumentMoniker": "SalesMS.WinForms\\SMainForm.cs",
+              "ToolTip": "E:\\C#\\SalesManagementSystem\\SalesMS.WinForms\\SMainForm.cs [Design]",
+              "RelativeToolTip": "SalesMS.WinForms\\SMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T23:39:58.788Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
