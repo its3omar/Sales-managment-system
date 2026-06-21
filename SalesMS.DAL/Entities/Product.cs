@@ -7,6 +7,7 @@
         public decimal costPrice {  get; set; }
         public decimal salePrice { get; set; }
         public int StockQuantity { get; set; }
+        public float Rate {  get; set; }
         public string? ImagePath {  get; set; }
 
 

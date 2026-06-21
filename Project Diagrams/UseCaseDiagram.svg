@@ -1,0 +1,165 @@
+<svg viewBox="0 0 1550 1250" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ucAssoc" markerWidth="1" markerHeight="1"></marker>
+    <marker id="ucOpen" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L9,5 L0,10" fill="none" stroke="#374151" stroke-width="1.4"/>
+    </marker>
+  </defs>
+  <style>
+    .oval { fill:#ffffff; stroke:#334155; stroke-width:1.8; }
+    .ovalText { font-size: 13px; fill:#1f2937; text-anchor:middle; font-weight:600; }
+    .relLbl { font-size: 11.5px; fill:#6d28d9; font-style:italic; text-anchor:middle; paint-order:stroke fill; stroke:#fff; stroke-width:4px;}
+    .assoc { stroke:#475569; stroke-width:1.4; }
+    .incl { stroke:#7c3aed; stroke-width:1.5; stroke-dasharray:6,4; fill:none; }
+    .ext  { stroke:#dc2626; stroke-width:1.5; stroke-dasharray:6,4; fill:none; }
+  </style>
+
+  <rect x="0" y="0" width="1550" height="1250" fill="#ffffff"/>
+  <text x="775" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Use Case Diagram — Sales Management System</text>
+
+  <!-- System boundary -->
+  <rect x="290" y="100" width="940" height="1040" rx="14" fill="#fafafa" stroke="#94a3b8" stroke-width="2"/>
+  <text x="760" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">Sales Management System</text>
+
+  <!-- ============ RELATIONSHIP LINES (drawn first, ovals on top) ============ -->
+  <!-- Customer associations (actor anchor 100,470) -->
+  <g class="assoc">
+    <line x1="100" y1="470" x2="750" y2="160"/>
+    <line x1="100" y1="470" x2="750" y2="230"/>
+    <line x1="100" y1="470" x2="430" y2="260"/>
+    <line x1="100" y1="470" x2="430" y2="330"/>
+    <line x1="100" y1="470" x2="430" y2="400"/>
+    <line x1="100" y1="470" x2="430" y2="470"/>
+    <line x1="100" y1="470" x2="430" y2="540"/>
+    <line x1="100" y1="470" x2="430" y2="610"/>
+    <line x1="100" y1="470" x2="430" y2="680"/>
+  </g>
+
+  <!-- Admin associations (actor anchor 1400,640) -->
+  <g class="assoc">
+    <line x1="1400" y1="640" x2="750" y2="160"/>
+    <line x1="1400" y1="640" x2="750" y2="230"/>
+    <line x1="1400" y1="640" x2="1070" y2="200"/>
+    <line x1="1400" y1="640" x2="1070" y2="280"/>
+    <line x1="1400" y1="640" x2="1070" y2="360"/>
+    <line x1="1400" y1="640" x2="1070" y2="440"/>
+    <line x1="1400" y1="640" x2="1070" y2="520"/>
+    <line x1="1400" y1="640" x2="1070" y2="600"/>
+  </g>
+
+  <!-- Include relationships: Purchase Product -> Check Balance / Update Stock -->
+  <path class="incl" marker-end="url(#ucOpen)" d="M520,395 L668,382"/>
+  <path class="incl" marker-end="url(#ucOpen)" d="M520,408 L658,448"/>
+  <text class="relLbl" x="595" y="378">&#171;include&#187;</text>
+  <text class="relLbl" x="585" y="440">&#171;include&#187;</text>
+
+  <!-- Extend: Search Products -> Browse Products -->
+  <path class="ext" marker-end="url(#ucOpen)" d="M430,302 L430,288"/>
+  <text class="relLbl" x="490" y="298">&#171;extend&#187;</text>
+
+  <!-- Extend: report sub-views -> View Reports and Statistics (staggered elbow routing) -->
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,680 L1210,680 L1210,600 L1200,600"/>
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,760 L1230,760 L1230,600 L1200,600"/>
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,840 L1250,840 L1250,600 L1200,600"/>
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,920 L1270,920 L1270,600 L1200,600"/>
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,1000 L1290,1000 L1290,600 L1200,600"/>
+  <path class="ext" marker-end="url(#ucOpen)" d="M1200,1080 L1310,1080 L1310,600 L1200,600"/>
+  <text class="relLbl" x="1340" y="850" transform="rotate(-90,1340,850)">&#171;extend&#187; (x6)</text>
+
+  <!-- ============ OVALS ============ -->
+  <!-- Center shared -->
+  <ellipse class="oval" cx="750" cy="160" rx="90" ry="28"/>
+  <text class="ovalText" x="750" y="165">Login</text>
+
+  <ellipse class="oval" cx="750" cy="230" rx="90" ry="28"/>
+  <text class="ovalText" x="750" y="235">Logout</text>
+
+  <ellipse class="oval" cx="750" cy="382" rx="95" ry="26" fill="#f5f3ff"/>
+  <text class="ovalText" x="750" y="387" font-size="12">Check Balance</text>
+
+  <ellipse class="oval" cx="750" cy="448" rx="90" ry="26" fill="#f5f3ff"/>
+  <text class="ovalText" x="750" y="453" font-size="12">Update Stock</text>
+
+  <!-- Left column: Customer use cases -->
+  <ellipse class="oval" cx="430" cy="260" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="265">Browse Products</text>
+
+  <ellipse class="oval" cx="430" cy="330" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="335">Search Products</text>
+
+  <ellipse class="oval" cx="430" cy="400" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="405">Purchase Product</text>
+
+  <ellipse class="oval" cx="430" cy="470" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="475">View Order History</text>
+
+  <ellipse class="oval" cx="430" cy="540" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="545">Recharge Balance</text>
+
+  <ellipse class="oval" cx="430" cy="610" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="615">Edit Account Info</text>
+
+  <ellipse class="oval" cx="430" cy="680" rx="115" ry="28"/>
+  <text class="ovalText" x="430" y="685">Delete Account</text>
+
+  <!-- Right column: Admin use cases -->
+  <ellipse class="oval" cx="1070" cy="200" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="205">Add Product</text>
+
+  <ellipse class="oval" cx="1070" cy="280" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="285">Edit Product</text>
+
+  <ellipse class="oval" cx="1070" cy="360" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="365">Delete Product</text>
+
+  <ellipse class="oval" cx="1070" cy="440" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="445">Manage Inventory</text>
+
+  <ellipse class="oval" cx="1070" cy="520" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="525">View Customers</text>
+
+  <ellipse class="oval" cx="1070" cy="600" rx="130" ry="30" fill="#fef2f2"/>
+  <text class="ovalText" x="1070" y="597" font-size="12.5">View Reports and</text>
+  <text class="ovalText" x="1070" y="613" font-size="12.5">Statistics</text>
+
+  <ellipse class="oval" cx="1070" cy="680" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="685" font-size="12">View Best Customers</text>
+
+  <ellipse class="oval" cx="1070" cy="760" rx="130" ry="30"/>
+  <text class="ovalText" x="1070" y="757" font-size="12">View Best-Selling</text>
+  <text class="ovalText" x="1070" y="773" font-size="12">Products</text>
+
+  <ellipse class="oval" cx="1070" cy="840" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="845">View Profits</text>
+
+  <ellipse class="oval" cx="1070" cy="920" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="925">View Store Capital</text>
+
+  <ellipse class="oval" cx="1070" cy="1000" rx="130" ry="28"/>
+  <text class="ovalText" x="1070" y="1005">View Inventory Status</text>
+
+  <ellipse class="oval" cx="1070" cy="1080" rx="130" ry="30"/>
+  <text class="ovalText" x="1070" y="1077" font-size="12">View Out-of-Stock</text>
+  <text class="ovalText" x="1070" y="1093" font-size="12">Products</text>
+
+  <!-- ============ ACTORS ============ -->
+  <g>
+    <circle cx="100" cy="430" r="14" fill="#fff" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="100" y1="444" x2="100" y2="500" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="75" y1="465" x2="125" y2="465" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="100" y1="500" x2="78" y2="540" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="100" y1="500" x2="122" y2="540" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="100" y="562" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Customer</text>
+  </g>
+
+  <g>
+    <circle cx="1400" cy="600" r="14" fill="#fff" stroke="#c2410c" stroke-width="2"/>
+    <line x1="1400" y1="614" x2="1400" y2="670" stroke="#c2410c" stroke-width="2"/>
+    <line x1="1375" y1="635" x2="1425" y2="635" stroke="#c2410c" stroke-width="2"/>
+    <line x1="1400" y1="670" x2="1378" y2="710" stroke="#c2410c" stroke-width="2"/>
+    <line x1="1400" y1="670" x2="1422" y2="710" stroke="#c2410c" stroke-width="2"/>
+    <text x="1400" y="732" text-anchor="middle" font-size="14" font-weight="700" fill="#c2410c">Admin</text>
+  </g>
+
+  <text x="775" y="1210" text-anchor="middle" font-size="12" fill="#6b7280">Dashed arrows: violet = &#171;include&#187;, red = &#171;extend&#187;. Solid lines = association.</text>
+</svg>

@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1000 1180" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="actArrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#374151"/>
+    </marker>
+  </defs>
+  <style>
+    .act { fill:#eff6ff; stroke:#1d4ed8; stroke-width:1.8; }
+    .actText { font-size:14px; font-weight:600; text-anchor:middle; fill:#1e3a8a; }
+    .dec { fill:#fffbeb; stroke:#d97706; stroke-width:1.8; }
+    .decText { font-size:12.5px; font-weight:600; text-anchor:middle; fill:#92400e; }
+    .flow { stroke:#374151; stroke-width:1.8; fill:none; marker-end:url(#actArrow); }
+    .branchLbl { font-size:12px; font-weight:700; fill:#b91c1c; }
+    .errAct { fill:#fef2f2; stroke:#dc2626; stroke-width:1.8; }
+    .errText { font-size:13px; font-weight:600; text-anchor:middle; fill:#991b1b; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="1180" fill="#ffffff"/>
+  <text x="500" y="28" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Activity Diagram — Customer Purchase Process</text>
+
+  <!-- Start -->
+  <circle cx="450" cy="60" r="14" fill="#111827"/>
+
+  <!-- Login -->
+  <rect class="act" x="320" y="95" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="127">Login</text>
+
+  <!-- Decision 1 -->
+  <polygon class="dec" points="450,170 565,225 450,280 335,225"/>
+  <text class="decText" x="450" y="220">Valid</text>
+  <text class="decText" x="450" y="234">Credentials?</text>
+
+  <!-- No branch 1 -->
+  <rect class="errAct" x="700" y="195" width="250" height="60" rx="10"/>
+  <text class="errText" x="825" y="221">Display Login Error</text>
+  <text class="errText" x="825" y="239">Message</text>
+  <circle cx="825" cy="320" r="16" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="825" cy="320" r="8" fill="#111827"/>
+
+  <!-- Browse / Search Products -->
+  <rect class="act" x="320" y="315" width="260" height="60" rx="26"/>
+  <text class="actText" x="450" y="341">Browse / Search</text>
+  <text class="actText" x="450" y="359">Products</text>
+
+  <!-- Select Product -->
+  <rect class="act" x="320" y="410" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="442">Select Product</text>
+
+  <!-- Check Balance -->
+  <rect class="act" x="320" y="500" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="532">Check Balance</text>
+
+  <!-- Decision 2 -->
+  <polygon class="dec" points="450,600 565,655 450,710 335,655"/>
+  <text class="decText" x="450" y="650">Sufficient</text>
+  <text class="decText" x="450" y="664">Balance?</text>
+
+  <!-- No branch 2 -->
+  <rect class="errAct" x="700" y="625" width="250" height="60" rx="10"/>
+  <text class="errText" x="825" y="651">Display Insufficient</text>
+  <text class="errText" x="825" y="669">Balance Message</text>
+  <circle cx="825" cy="750" r="16" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="825" cy="750" r="8" fill="#111827"/>
+
+  <!-- Purchase Product -->
+  <rect class="act" x="320" y="745" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="777">Purchase Product</text>
+
+  <!-- Update Inventory -->
+  <rect class="act" x="320" y="835" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="867">Update Inventory</text>
+
+  <!-- Save Order -->
+  <rect class="act" x="320" y="925" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="957">Save Order</text>
+
+  <!-- Display Success Message -->
+  <rect class="act" x="320" y="1015" width="260" height="55" rx="26"/>
+  <text class="actText" x="450" y="1047">Display Success Message</text>
+
+  <!-- Final -->
+  <circle cx="450" cy="1135" r="16" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="450" cy="1135" r="8" fill="#111827"/>
+
+  <!-- ===== Flows ===== -->
+  <path class="flow" d="M450,74 L450,93"/>
+  <path class="flow" d="M450,150 L450,168"/>
+  <path class="flow" d="M450,280 L450,313"/>
+  <text class="branchLbl" x="465" y="300">Yes</text>
+  <path class="flow" d="M565,225 L700,225"/>
+  <text class="branchLbl" x="600" y="218">No</text>
+  <path class="flow" d="M825,255 L825,302"/>
+
+  <path class="flow" d="M450,375 L450,408"/>
+  <path class="flow" d="M450,465 L450,498"/>
+  <path class="flow" d="M450,710 L450,743"/>
+  <text class="branchLbl" x="465" y="730">Yes</text>
+  <path class="flow" d="M565,655 L700,655"/>
+  <text class="branchLbl" x="600" y="648">No</text>
+  <path class="flow" d="M825,685 L825,732"/>
+
+  <path class="flow" d="M450,800 L450,833"/>
+  <path class="flow" d="M450,890 L450,923"/>
+  <path class="flow" d="M450,980 L450,1013"/>
+  <path class="flow" d="M450,1070 L450,1117"/>
+
+  <text x="500" y="1170" text-anchor="middle" font-size="12" fill="#6b7280">Decision points (login validation, balance check) are reasonable inferred guards ensuring a consistent, error-safe purchase flow.</text>
+</svg>

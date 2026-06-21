@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1550 1150" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="triangle" markerWidth="16" markerHeight="14" refX="14" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#ffffff" stroke="#1f2937" stroke-width="1.2"/>
+    </marker>
+    <marker id="assocArrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#1f2937" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <style>
+    .clsbox { fill:#ffffff; stroke:#1f2937; stroke-width:1.8; }
+    .clsname { font-size:15px; font-weight:700; text-anchor:middle; fill:#111827; }
+    .clsabstract { font-size:15px; font-weight:700; font-style:italic; text-anchor:middle; fill:#111827; }
+    .attr { font-size:12.5px; fill:#1f2937; }
+    .meth { font-size:12.5px; fill:#1f2937; }
+    .divider { stroke:#1f2937; stroke-width:1.2; }
+    .gen { stroke:#1f2937; stroke-width:1.6; fill:none; }
+    .assoc { stroke:#1f2937; stroke-width:1.4; fill:none; }
+    .mult { font-size:11px; fill:#374151; }
+    .rellbl { font-size:11.5px; font-style:italic; fill:#6b21a8; }
+  </style>
+
+  <rect x="0" y="0" width="1550" height="1150" fill="#ffffff"/>
+  <text x="775" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Class Diagram — Sales Management System</text>
+
+  <!-- ===================== Generalization lines (behind boxes) ===================== -->
+  <path class="gen" marker-end="url(#triangle)" d="M250,260 L250,210 L680,210 L680,182"/>
+  <path class="gen" marker-end="url(#triangle)" d="M1270,260 L1270,210 L820,210 L820,182"/>
+
+  <!-- ===================== Association / Composition lines ===================== -->
+  <!-- Customer to Order -->
+  <line class="assoc" x1="250" y1="560" x2="250" y2="600"/>
+  <text class="mult" x="258" y="575">1</text>
+  <text class="mult" x="258" y="596">0..*</text>
+  <text class="rellbl" x="270" y="585">places</text>
+
+  <!-- Order to OrderItem (composition: filled diamond at Order end) -->
+  <line class="assoc" x1="250" y1="780" x2="250" y2="810"/>
+  <polygon points="250,772 258,780 250,788 242,780" fill="#1f2937"/>
+  <text class="mult" x="258" y="800">1</text>
+  <text class="mult" x="258" y="822">1..*</text>
+  <text class="rellbl" x="270" y="800">contains</text>
+
+  <!-- OrderItem to Product -->
+  <line class="assoc" x1="420" y1="870" x2="1080" y2="780"/>
+  <text class="mult" x="430" y="862">1</text>
+  <text class="mult" x="1050" y="775">1</text>
+  <text class="rellbl" x="680" y="810">refers to</text>
+
+  <!-- Customer to BalanceTransaction (composition) -->
+  <line class="assoc" x1="420" y1="410" x2="460" y2="660"/>
+  <polygon points="423,394 433,400 425,408 417,400" fill="#1f2937" transform="translate(0,0)"/>
+  <text class="mult" x="428" y="408">1</text>
+  <text class="mult" x="430" y="650">0..*</text>
+  <text class="rellbl" x="345" y="540">has</text>
+
+  <!-- Admin to Product -->
+  <line class="assoc" x1="1270" y1="600" x2="1250" y2="680"/>
+  <text class="mult" x="1278" y="615">1</text>
+  <text class="mult" x="1255" y="672">0..*</text>
+  <text class="rellbl" x="1290" y="645">manages</text>
+
+  <!-- ===================== User (abstract) ===================== -->
+  <g>
+    <rect class="clsbox" x="590" y="60" width="320" height="120"/>
+    <text class="clsabstract" x="750" y="80">User</text>
+    <text x="750" y="94" text-anchor="middle" font-size="10.5" fill="#6b7280">&#171;abstract&#187;</text>
+    <line class="divider" x1="590" y1="100" x2="910" y2="100"/>
+    <text class="attr" x="602" y="118">- Password: string</text>
+    <line class="divider" x1="590" y1="128" x2="910" y2="128"/>
+    <text class="meth" x="602" y="146">+ login(): boolean</text>
+    <text class="meth" x="602" y="166">+ logout(): void</text>
+  </g>
+
+  <!-- ===================== Customer ===================== -->
+  <g>
+    <rect class="clsbox" x="80" y="260" width="340" height="300" fill="#eff6ff"/>
+    <text class="clsname" x="250" y="282">Customer</text>
+    <line class="divider" x1="80" y1="296" x2="420" y2="296"/>
+    <text class="attr" x="92" y="314">- CustomerID: int</text>
+    <text class="attr" x="92" y="332">- Name: string</text>
+    <text class="attr" x="92" y="350">- Phone: string</text>
+    <text class="attr" x="92" y="368">- Email: string</text>
+    <text class="attr" x="92" y="386">- Balance: float</text>
+    <line class="divider" x1="80" y1="398" x2="420" y2="398"/>
+    <text class="meth" x="92" y="416">+ browseProducts(): List&lt;Product&gt;</text>
+    <text class="meth" x="92" y="434">+ searchProducts(keyword): List&lt;Product&gt;</text>
+    <text class="meth" x="92" y="452">+ purchaseProduct(productId, qty): Order</text>
+    <text class="meth" x="92" y="470">+ viewOrders(): List&lt;Order&gt;</text>
+    <text class="meth" x="92" y="488">+ rechargeBalance(amount): void</text>
+    <text class="meth" x="92" y="506">+ editAccountInfo(): void</text>
+    <text class="meth" x="92" y="524">+ deleteAccount(): void</text>
+  </g>
+
+  <!-- ===================== Admin ===================== -->
+  <g>
+    <rect class="clsbox" x="1080" y="260" width="380" height="340" fill="#fff7ed"/>
+    <text class="clsname" x="1270" y="282">Admin</text>
+    <line class="divider" x1="1080" y1="296" x2="1460" y2="296"/>
+    <text class="attr" x="1092" y="314">- AdminID: int</text>
+    <text class="attr" x="1092" y="332">- Username: string</text>
+    <line class="divider" x1="1080" y1="344" x2="1460" y2="344"/>
+    <text class="meth" x="1092" y="362">+ addProduct(product): void</text>
+    <text class="meth" x="1092" y="380">+ editProduct(productId): void</text>
+    <text class="meth" x="1092" y="398">+ deleteProduct(productId): void</text>
+    <text class="meth" x="1092" y="416">+ manageInventory(): void</text>
+    <text class="meth" x="1092" y="434">+ viewCustomers(): List&lt;Customer&gt;</text>
+    <text class="meth" x="1092" y="452">+ viewBestCustomers(): List&lt;Customer&gt;</text>
+    <text class="meth" x="1092" y="470">+ viewBestSellingProducts(): List&lt;Product&gt;</text>
+    <text class="meth" x="1092" y="488">+ viewProfits(): float</text>
+    <text class="meth" x="1092" y="506">+ viewStoreCapital(): float</text>
+    <text class="meth" x="1092" y="524">+ viewInventoryStatus(): void</text>
+    <text class="meth" x="1092" y="542">+ viewOutOfStockProducts(): List&lt;Product&gt;</text>
+    <text class="meth" x="1092" y="560">+ viewReports(): Report</text>
+  </g>
+
+  <!-- ===================== Order ===================== -->
+  <g>
+    <rect class="clsbox" x="80" y="600" width="340" height="180" fill="#f8fafc"/>
+    <text class="clsname" x="250" y="622">Order</text>
+    <line class="divider" x1="80" y1="636" x2="420" y2="636"/>
+    <text class="attr" x="92" y="654">- OrderID: int</text>
+    <text class="attr" x="92" y="672">- OrderDate: date</text>
+    <text class="attr" x="92" y="690">- TotalAmount: float</text>
+    <line class="divider" x1="80" y1="702" x2="420" y2="702"/>
+    <text class="meth" x="92" y="720">+ calculateTotal(): float</text>
+    <text class="meth" x="92" y="738">+ addOrderItem(item): void</text>
+    <text class="meth" x="92" y="756">+ getOrderDetails(): string</text>
+  </g>
+
+  <!-- ===================== OrderItem ===================== -->
+  <g>
+    <rect class="clsbox" x="80" y="810" width="340" height="130" fill="#f8fafc"/>
+    <text class="clsname" x="250" y="832">OrderItem</text>
+    <line class="divider" x1="80" y1="846" x2="420" y2="846"/>
+    <text class="attr" x="92" y="864">- Quantity: int</text>
+    <text class="attr" x="92" y="882">- UnitPrice: float</text>
+    <line class="divider" x1="80" y1="894" x2="420" y2="894"/>
+    <text class="meth" x="92" y="912">+ calculateSubtotal(): float</text>
+  </g>
+
+  <!-- ===================== BalanceTransaction ===================== -->
+  <g>
+    <rect class="clsbox" x="460" y="600" width="300" height="130" fill="#fefce8"/>
+    <text class="clsname" x="610" y="622">BalanceTransaction</text>
+    <line class="divider" x1="460" y1="636" x2="760" y2="636"/>
+    <text class="attr" x="472" y="654">- Amount: float</text>
+    <text class="attr" x="472" y="672">- Date: date</text>
+    <line class="divider" x1="460" y1="684" x2="760" y2="684"/>
+    <text class="meth" x="472" y="702">+ getTransactionDetails(): string</text>
+  </g>
+
+  <!-- ===================== Product ===================== -->
+  <g>
+    <rect class="clsbox" x="1080" y="680" width="340" height="200" fill="#ecfdf5"/>
+    <text class="clsname" x="1250" y="702">Product</text>
+    <line class="divider" x1="1080" y1="716" x2="1420" y2="716"/>
+    <text class="attr" x="1092" y="734">- ProductID: int</text>
+    <text class="attr" x="1092" y="752">- Name: string</text>
+    <text class="attr" x="1092" y="770">- Price: float</text>
+    <text class="attr" x="1092" y="788">- Quantity: int</text>
+    <line class="divider" x1="1080" y1="800" x2="1420" y2="800"/>
+    <text class="meth" x="1092" y="818">+ updateQuantity(qty): void</text>
+    <text class="meth" x="1092" y="836">+ checkAvailability(): boolean</text>
+    <text class="meth" x="1092" y="854">+ getDetails(): string</text>
+  </g>
+
+  <text x="775" y="1110" text-anchor="middle" font-size="12" fill="#6b7280">Hollow triangle = generalization (inheritance) &#160;&#160;|&#160;&#160; Filled diamond = composition &#160;&#160;|&#160;&#160; Plain line = association</text>
+</svg>

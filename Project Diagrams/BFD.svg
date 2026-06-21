@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1480 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#374151"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1480" height="460" fill="#ffffff"/>
+  <text x="740" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">Business Flow Diagram (BFD) — Sales Management System</text>
+
+  <!-- Customer lane -->
+  <rect x="20" y="60" width="1440" height="150" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="40" y="85" font-size="15" font-weight="700" fill="#1d4ed8">CUSTOMER FLOW</text>
+
+  <!-- Admin lane -->
+  <rect x="20" y="260" width="1440" height="150" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="40" y="285" font-size="15" font-weight="700" fill="#c2410c">ADMIN FLOW</text>
+
+  <!-- Customer boxes -->
+  <!-- positions: 130,315,500,685,870,1055,1240 ; y=100 h=70 w=150 -->
+  <g font-size="13" fill="#1e3a8a">
+    <rect x="130" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="205" y="139" text-anchor="middle" font-weight="600">Login</text>
+
+    <rect x="315" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="390" y="131" text-anchor="middle" font-weight="600">Browse</text>
+    <text x="390" y="147" text-anchor="middle" font-weight="600">Products</text>
+
+    <rect x="500" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="575" y="131" text-anchor="middle" font-weight="600">Search</text>
+    <text x="575" y="147" text-anchor="middle" font-weight="600">Products</text>
+
+    <rect x="685" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="760" y="131" text-anchor="middle" font-weight="600">Select</text>
+    <text x="760" y="147" text-anchor="middle" font-weight="600">Product</text>
+
+    <rect x="870" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="945" y="131" text-anchor="middle" font-weight="600">Purchase</text>
+    <text x="945" y="147" text-anchor="middle" font-weight="600">Product</text>
+
+    <rect x="1055" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="1130" y="131" text-anchor="middle" font-weight="600">Order</text>
+    <text x="1130" y="147" text-anchor="middle" font-weight="600">Recorded</text>
+
+    <rect x="1240" y="100" width="150" height="70" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="1315" y="131" text-anchor="middle" font-weight="600">View</text>
+    <text x="1315" y="147" text-anchor="middle" font-weight="600">Orders</text>
+  </g>
+
+  <!-- Customer arrows -->
+  <g stroke="#374151" stroke-width="2" marker-end="url(#arrowB)">
+    <line x1="280" y1="135" x2="313" y2="135"/>
+    <line x1="465" y1="135" x2="498" y2="135"/>
+    <line x1="650" y1="135" x2="683" y2="135"/>
+    <line x1="835" y1="135" x2="868" y2="135"/>
+    <line x1="1020" y1="135" x2="1053" y2="135"/>
+    <line x1="1205" y1="135" x2="1238" y2="135"/>
+  </g>
+
+  <!-- Admin boxes -->
+  <!-- positions: 130,315,500,685 ; y=300 h=70 w=150 -->
+  <g font-size="13" fill="#7c2d12">
+    <rect x="130" y="300" width="150" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <text x="205" y="339" text-anchor="middle" font-weight="600">Login</text>
+
+    <rect x="315" y="300" width="150" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <text x="390" y="331" text-anchor="middle" font-weight="600">Manage</text>
+    <text x="390" y="347" text-anchor="middle" font-weight="600">Products</text>
+
+    <rect x="500" y="300" width="150" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <text x="575" y="331" text-anchor="middle" font-weight="600">Update</text>
+    <text x="575" y="347" text-anchor="middle" font-weight="600">Inventory</text>
+
+    <rect x="685" y="300" width="150" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <text x="760" y="325" text-anchor="middle" font-size="12" font-weight="600">View Statistics</text>
+    <text x="760" y="341" text-anchor="middle" font-size="12" font-weight="600">and Reports</text>
+  </g>
+
+  <!-- Admin arrows -->
+  <g stroke="#374151" stroke-width="2" marker-end="url(#arrowB)">
+    <line x1="280" y1="335" x2="313" y2="335"/>
+    <line x1="465" y1="335" x2="498" y2="335"/>
+    <line x1="650" y1="335" x2="683" y2="335"/>
+  </g>
+
+  <text x="740" y="440" text-anchor="middle" font-size="12" fill="#6b7280">Both flows begin with a common "Login" step; flows are independent thereafter and both end implicitly with "Logout" (omitted for clarity).</text>
+</svg>
